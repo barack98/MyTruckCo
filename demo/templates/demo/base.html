@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>	
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'demo/style.css' %}">
+
+</head>
+<body>
+
+	<div>
+		<div class="navbar-base">
+			<a href="{% url 'demo:index' %}">Home</a>
+			<a href="{% url 'demo:about' %}">About Us</a>
+			<a href="{% url 'demo:contact' %}">Contact Us</a>
+		</div>
+	</div>
+	{% block body %}
+	{% endblock %}
+
+</body>
+</html>

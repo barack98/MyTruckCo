@@ -1,0 +1,22 @@
+body {
+	background-color: #eee;
+	font-family:Arial; 
+}
+
+.navbar-base {
+	background-color: #211b1b;
+	overflow: hidden;
+	font-family:Arial; 
+}
+
+.navbar-base a {
+	float: left;
+	color: white;
+	text-decoration: none;
+	padding: 14px 16px;
+	font-size: 16px;
+}
+
+.navbar-base a:hover {
+	background-color: red;
+}

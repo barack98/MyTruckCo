@@ -1,0 +1,16 @@
+
+{% extends 'demo/base.html' %}
+{% block body %}
+
+{% if all_albums %}
+	<h4>My Photos</h4>
+	<ul>
+		{% for album in all_albums %}
+			<li><a href="{% url 'demo:detail' album.id %}">{{ album.album_title }}</a></li>
+		{% endfor %}
+		</ul>
+{% else %}
+	<h3>You don't have any photos yet</h3>
+{% endif %}
+
+{% endblock %}

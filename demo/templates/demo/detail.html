@@ -1,0 +1,17 @@
+
+{% extends 'demo/base.html' %}
+{% block body %}
+
+
+<img src="{{ album.album_logo }}">
+
+<h1>{{ album.album_title }}</h1>
+<h3>{{ album.name }}</h3>
+
+<ul>
+	{% for photo in album.picture_set.all %}
+	<li>{{ photos.photos }}</li>
+	{% endfor %}
+</ul>
+
+{% endblock %}
